@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="3dp"
+    android:background="@color/color1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/textView_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기사 제목" />
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="right"
+                    android:id="@+id/textView_who"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="신문사" />
+
+
+        </LinearLayout>
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삭제"
+                android:id="@+id/savedelete"/>
+    </LinearLayout>
+</LinearLayout>

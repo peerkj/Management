@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/noticeListView" />
+    </ScrollView>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:background="@drawable/edittext_login"
+            android:id="@+id/noticeText"
+            android:layout_width="228dp"
+            android:drawableStart="@drawable/ic_textsms_black_24dp"
+            android:drawableLeft="@drawable/ic_textsms_black_24dp"
+            android:layout_height="wrap_content"
+            android:hint="내용" />
+
+        <EditText
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:background="@drawable/edittext_login"
+            android:id="@+id/nameText"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_person_outline_black_24dp"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:text="관리자"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:background="@drawable/edittext_login"
+            android:drawableStart="@drawable/ic_alarm_black_24dp"
+            android:drawableLeft="@drawable/ic_alarm_black_24dp"
+            android:id="@+id/dateText"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:hint="날짜"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="130dp"
+            android:background="@drawable/button_login"
+            android:layout_height="wrap_content"
+            android:text="공지" />
+    </LinearLayout>
+</LinearLayout>

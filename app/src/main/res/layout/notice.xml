@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/color1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateText"
+        android:text="2019-09-25"
+
+        android:drawableStart="@drawable/ic_textsms_black_24dp"
+        android:drawableLeft="@drawable/ic_textsms_black_24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <TextView
+
+            android:textColor="@color/colorPrimaryDark"
+            android:text="내용"
+            android:id="@+id/noticeText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="경석"
+            android:id="@+id/nameText"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:id="@+id/deleteButton"
+            android:gravity="center"
+            android:text="삭제" />
+    </LinearLayout>
+
+</LinearLayout>
